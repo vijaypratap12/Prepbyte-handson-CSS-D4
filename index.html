@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Day 4</title>
+    <style>
+      * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+      }
+      .top-heading {
+        background: linear-gradient(to right, red, green, yellow);
+        text-decoration: underline;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .navbar {
+        width: 50%;
+        margin: auto;
+        border: 3px solid red;
+        text-align: center;
+        padding: 5px 20px;
+        border-radius: 10px;
+        background-color: rgb(23, 141, 180);
+      }
+
+      .navbar ul li a {
+        text-decoration: none;
+        color: black;
+      }
+
+      .content-box {
+        border: 2px solid red;
+        background-color: rgb(43, 202, 194);
+        padding: 0px 20px;
+        border-radius: 15px;
+        display: flex;
+        margin-top: 20px;
+      }
+
+      .box {
+        border: 2px solid green;
+        margin: 0px 20px;
+        border-radius: 10px;
+        background-color: rgb(54, 133, 109);
+      }
+      .upper {
+        height: fit-content;
+      }
+      .lower {
+        height: fit-content;
+      }
+
+      .performer-heading {
+        text-align: center;
+        text-decoration: underline;
+        margin: 20px 0px;
+        background: linear-gradient(to right, red, yellow, red);
+        padding-bottom: 10px;
+      }
+
+      .performer-container {
+        border: 2px solid green;
+        display: flex;
+        justify-content: center;
+        padding: 70px 0px;
+        background: radial-gradient(
+          ellipse,
+          blue,
+          rgb(26, 130, 172),
+          rgb(32, 129, 32)
+        );
+      }
+
+      .performer {
+        text-align: center;
+        border: 2px solid red;
+        background-color: yellow;
+        color: red;
+        margin: 0px 30px;
+        padding: 0px 20px 20px 20px;
+        border-radius: 10px;
+        text-decoration: underline;
+      }
+
+      .best-heading {
+        text-align: center;
+        background-color: red;
+        padding-bottom: 20px;
+        color: white;
+        margin: 20px 0px;
+      }
+
+      .mid-content {
+        display: flex;
+      }
+      .mid-left-side {
+        margin-right: 20px;
+      }
+
+      .mid-left-upper {
+        display: flex;
+        justify-content: space-between;
+        margin: 0px 0px 20px 0px;
+      }
+
+      .mid-left-upper1 {
+        color: white;
+        background-color: green;
+        font-size: 25px;
+      }
+      .mid-left-upper2 {
+        color: white;
+        background-color: skyblue;
+        font-size: 25px;
+        margin: 0px 20px;
+      }
+      .mid-left-upper3 {
+        color: white;
+        background-color: violet;
+        font-size: 25px;
+      }
+
+      .mid-left-lower {
+        background-color: burlywood;
+        color: white;
+        font-size: 20px;
+      }
+      .mid-right-side {
+        background-color: black;
+        color: white;
+        padding-left: 20px;
+      }
+
+      .last-heading {
+        background-color: skyblue;
+        text-align: center;
+        margin: 20px 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="top-heading">
+        <h2>OUR OFFERINGS</h2>
+      </div>
+
+      <div class="navbar">
+        <ul>
+          <li>
+            <a href="#xyz">Home</a>
+          </li>
+          <li>
+            <a href="#xyz">Contact Us</a>
+          </li>
+          <li>
+            <a href="#xyz">Review Us</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="content-box">
+      <div class="box upper">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum aliquam
+          necessitatibus facere repellendus vitae corporis, accusamus vel
+          assumenda cumque voluptatibus.
+        </p>
+      </div>
+
+      <div>
+        <div class="box">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita,
+            in. Officiis quaerat animi voluptatem in? Laboriosam eaque quam amet
+            rerum!
+          </p>
+        </div>
+        <div class="box">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti
+            veniam est esse asperiores, commodi dicta recusandae a veritatis ea
+            harum?
+          </p>
+        </div>
+      </div>
+
+      <div class="box lower">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam dicta
+          alias vel cumque veniam enim officia labore et architecto explicabo!
+        </p>
+      </div>
+    </div>
+
+    <div class="performer-heading">
+      <h3>OUR TOP PERFORMER IN JEE ADVANCE</h3>
+    </div>
+
+    <div class="performer-container">
+      <div class="performer">
+        <p>AKASH GUPTA<br />213/300<br />GOT IIT BOMBAY</p>
+      </div>
+      <div class="performer">
+        <p>Rishav<br />213/300<br />GOT IIT Delhi</p>
+      </div>
+      <div class="performer">
+        <p>AKASH GUPTA<br />213/300<br />GOT IIT BOMBAY</p>
+      </div>
+      <div class="performer">
+        <p>AKASH GUPTA<br />213/300<br />GOT IIT BOMBAY</p>
+      </div>
+    </div>
+
+    <div class="best-heading">
+      <h3>THE BEST PLACE FOR THE BEST CAREER.</h3>
+    </div>
+
+    <div class="mid-content">
+      <div class="mid-left-side">
+        <div class="mid-left-upper">
+          <div class="mid-left-upper1">
+            <p>You can ask doubt in our doubt session.</p>
+          </div>
+          <div class="mid-left-upper2">
+            <p>Get 30% OFF by applying code while purchasing course.</p>
+          </div>
+          <div class="mid-left-upper3">
+            <p>
+              We assure that your hard work and our teachin will give bright
+              result.
+            </p>
+          </div>
+        </div>
+        <div class="mid-left-lower">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+            necessitatibus iusto quod illo, obcaecati molestias nobis
+            asperiores, amet non pariatur officiis cumque est earum accusantium
+            nostrum doloremque maxime praesentium ducimus! Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Praesentium iusto quisquam
+            commodi eum magni sequi totam inventore, tenetur minima nulla eaque
+            quos ex error ad aliquid temporibus consequatur tempore ab?
+          </p>
+        </div>
+      </div>
+      <div class="mid-right-side">
+        <ol>
+          <li>Study Material</li>
+          <li>Tests</li>
+          <li>Doubt Mentors</li>
+          <li>Lectures</li>
+          <li>Our subscription</li>
+          <li>Our Faculty</li>
+        </ol>
+      </div>
+    </div>
+
+    <header>
+      <div class="last-heading">
+        <h3>ALL THE BEST !</h3>
+      </div>
+    </header>
+  </body>
+</html>
